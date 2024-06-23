@@ -10,6 +10,14 @@ public class Cuffie extends Prodotto {
 		this.colour = colour;
 		this.isWireless = isWireless;
 	}
+	//constructor Overload
+			public Cuffie(String name, String brand, String price, String vat, String colour, String isWireless) {
+				super(name, brand, price, vat);
+				this.colour = colour;
+				if (isWireless.equals("si")) {
+					this.isWireless = true;
+				}
+			}
 	// Getters and Setters
 	public String getColour() {
 		return colour;

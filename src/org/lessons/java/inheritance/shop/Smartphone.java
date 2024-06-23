@@ -11,7 +11,12 @@ public class Smartphone extends Prodotto{
 		this.imeiCode = imeiCode;
 		this.phoneStorage = phoneStorage;
 	}
-	
+	// constructor Overload
+	public Smartphone(String name, String brand, String price, String vat, String imeiCode, String phoneStorage) {
+		super(name, brand, price, vat);
+		this.imeiCode = Long.parseLong(imeiCode);
+		this.phoneStorage = Integer.parseInt(phoneStorage);
+	}
 	// Getters and Setters
 	public long getImeiCode() {
 		return imeiCode;

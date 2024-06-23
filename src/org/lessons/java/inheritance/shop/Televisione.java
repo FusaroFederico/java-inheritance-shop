@@ -10,6 +10,14 @@ public class Televisione extends Prodotto {
 		this.dimension = dimension;
 		this.isSmart = isSmart;
 	}
+	//constructor Overload
+		public Televisione(String name, String brand, String price, String vat, String dimension, String isSmart) {
+			super(name, brand, price, vat);
+			this.dimension = Integer.parseInt(dimension);
+			if (isSmart.equals("si")) {
+				this.isSmart = true;
+			}
+		}
 	// Getters and Setters
 	public int getDimension() {
 		return dimension;

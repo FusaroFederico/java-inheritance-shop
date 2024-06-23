@@ -15,11 +15,21 @@ public class Prodotto {
 			Random random = new Random();
 			// max 8-digit random number
 			this.code = 1 + random.nextInt(99999999);
-			
 			this.name = name;
 			this.brand = brand;
 			this.price = price;
 			this.vat = vat;
+		}
+		// constructor Overload
+		public Prodotto(String name, String brand, String price, String vat) {
+			// new instance for random number
+			Random random = new Random();
+			// max 8-digit random number
+			this.code = 1 + random.nextInt(99999999);
+			this.name = name;
+			this.brand = brand;
+			this.price = Double.parseDouble(price);
+			this.vat = Integer.parseInt(vat);
 		}
 		// Getters and Setters
 		public int getCode() {
