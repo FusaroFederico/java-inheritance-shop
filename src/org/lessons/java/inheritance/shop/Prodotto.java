@@ -99,4 +99,8 @@ public class Prodotto {
 			int randomCode = 1 + random.nextInt(9999);
 			return String.format("%08d", randomCode);
 		}
+		// toString method
+		public String toString() {
+			return "Prodotto: " + getFullName() + ", " + brand + ", " + price + " euro, " + "IVA " + vat + "%.";
+		}
 }

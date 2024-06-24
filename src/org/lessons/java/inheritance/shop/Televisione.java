@@ -31,5 +31,17 @@ public class Televisione extends Prodotto {
 	public void setSmart(boolean isSmart) {
 		this.isSmart = isSmart;
 	}
-
+	// tvType method
+	public String tvType() {
+		if (isSmart) {
+			return "smartTV";
+		}
+		return "no smartTV";
+	}
+	// Override toString method
+	@Override
+	public String toString() {
+		return "Televisione: " + getFullName() + ", " + getBrand() + ", " + dimension + " pollici, " +
+				tvType() + ", " + getHumanGrossPrice() + ".";
+	}
 }

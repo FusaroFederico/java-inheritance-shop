@@ -30,5 +30,10 @@ public class Smartphone extends Prodotto{
 	public void setPhoneStorage(int phoneStorage) {
 		this.phoneStorage = phoneStorage;
 	}
-	
+	// Override toString method
+	@Override
+	public String toString() {
+		return "Smartphone: " + getFullName() + ", " + getBrand() + ", " + phoneStorage + " GB, " +
+				"IMEI: " + imeiCode + ", " + getHumanGrossPrice() + ".";
+	}
 }

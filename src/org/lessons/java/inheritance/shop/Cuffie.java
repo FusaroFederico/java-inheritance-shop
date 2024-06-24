@@ -31,6 +31,18 @@ public class Cuffie extends Prodotto {
 	public void setWireless(boolean isWireless) {
 		this.isWireless = isWireless;
 	}
-	
+	// earPhonesType
+	public String earPhonesType() {
+		if (isWireless) {
+			return "wireless";
+		}
+		return "cablate";
+	}
+	// Override toString method
+	@Override
+	public String toString() {
+		return "Cuffie: " + getFullName() + ", " + getBrand() + ", " + "colore: " + colour +
+				", " + earPhonesType() + ", " + getHumanGrossPrice() + ".";
+	}
 
 }
