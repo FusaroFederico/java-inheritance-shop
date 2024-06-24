@@ -42,7 +42,7 @@ public class Cuffie extends Prodotto {
 	@Override
 	public String toString() {
 		return "Cuffie: " + getFullName() + ", " + getBrand() + ", " + "colore: " + colour +
-				", " + earPhonesType() + ", " + getHumanGrossPrice() + ".";
+				", " + earPhonesType() + ", " + "prezzo: " + getHumanGrossPrice() + ".";
 	}
 
 }

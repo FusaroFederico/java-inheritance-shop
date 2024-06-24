@@ -42,6 +42,6 @@ public class Televisione extends Prodotto {
 	@Override
 	public String toString() {
 		return "Televisione: " + getFullName() + ", " + getBrand() + ", " + dimension + " pollici, " +
-				tvType() + ", " + getHumanGrossPrice() + ".";
+				tvType() + ", " + "prezzo: " + getHumanGrossPrice() + ".";
 	}
 }
